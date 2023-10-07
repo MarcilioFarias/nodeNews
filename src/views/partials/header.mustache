@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>One-Page Layout</title>
+</head>
+<body>
+
+    
+    <div class="container">
+
+
+        <!--Estrutura do menu navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+            <div class="">
+                <!--Botao que so aparece na versao mobile-->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Construcao da estrutura do menu-->
+                <div class="navbar-collapse collapse" id="navMenu">
+                    <!--Itns do menu-->
+                    <div class="navbar-nav">
+                        <a href="/" class="{{#menu.home}}active{{/menu.home}} nav-item nav-link btn-outline-secondary">Home</a>
+                        <a href="/aboutus" class="{{#menu.aboutus}}active{{/menu.aboutus}} nav-item nav-link btn-outline-secondary">about us</a>
+                        <a href="/services" class="{{#menu.services}}active{{/menu.services}} nav-item nav-link btn-outline-secondary">services</a>
+                        <a href="" class="nav-item nav-link btn-outline-secondary">Contact</a>
+                        <a href="/external" class="{{#menu.external}}active{{/menu.external}} nav-item nav-link btn-outline-secondary">External</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+{{#banner}}        
+        <!--BANNER-->
+        <div class="slide carousel carousel-fade" id="slider">
+            <!--Icone indicando quantidade de imagens-->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slider" data-slide-to="0"></li>
+                <li class="" data-target="#slider" data-slide-to="1"></li>
+                <li class="" data-target="#slider" data-slide-to="2"></li>
+                <li class="" data-target="#slider" data-slide-to="4"></li>
+            </ol>
+            <!--Imagens do banner-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/slider/{{background}}" class="bannerImg img-fluid" />
+                    <div class="carousel-caption">
+                        <p class="h2">{{title}}</p>
+                        <p>
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris eu tincidunt odio, eu tincidunt sem.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider/b2.jpg" class="bannerImg img-fluid" />
+                    <div class="carousel-caption">
+                        <p class="h2">Title</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris eu tincidunt odio, eu tincidunt sem.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider/b3.jpg" class="bannerImg img-fluid" />
+                    <div class="carousel-caption">
+                        <p class="h2">Title</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris eu tincidunt odio, eu tincidunt sem.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider/b4.jpg" class="bannerImg img-fluid" />
+                    <div class="carousel-caption">
+                        <p class="h2">Title</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris eu tincidunt odio, eu tincidunt sem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Botoes para mudar a imagem-->
+            <a href="#slider" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+{{/banner}}        
